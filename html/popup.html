@@ -7,38 +7,60 @@
 <!-- popup.html -->
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="../css/popup.css" />
-</head>
-<body>
-    <h2>懒狗抢座位专用插件</h2>
-    <div>
-        <select class="area">
-            <option>选择你的学习区域</option>
-            <option value = "101699933-101700080">南湖二楼开敞座位区</option>
-            <option value = "101700081-101700176">南湖卡座</option>
-            <option value = "101699605-101699776">南湖分馆一楼中庭开敞座位区</option>
-            <option value = "101699777-101699932">南湖分馆一楼开敞座位区</option>
-        </select>
-    </div>
-    <br>
-    <div>
-        <h2>选择日期</h2>
-        日期: <input class="date" type="date" />
-    </div>
-    <div>
-    <h3>选择你的学习时间</h3>
-        开始时间：<input class="start" type="time">
-        <br>
-        结束时间：<input class="end" type="time">
-    </div>
-    <br/>
-    <div>
-        <button class="now">现在就学</button>
-        <button class="reserve">六点开抢</button>
-    </div>
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+</head>
+
+<body>
+<h2>懒狗抢座位专用插件</h2>
+<div>
+    <select class="area">
+        <option>选择你的学习区域</option>
+        <option value="101699933-101700080">南湖二楼开敞座位区</option>
+        <option value="101700081-101700176">南湖卡座</option>
+        <option value="101699605-101699776">南湖分馆一楼中庭开敞座位区</option>
+        <option value="101699777-101699932">南湖分馆一楼开敞座位区</option>
+        <option value="101697166-101697223">南湖图书馆研讨间</option>
+    </select>
+</div>
+<br>
+<div>
+    <h2>选择日期</h2>
+    日期: <input class="date" type="date"/>
+</div>
+<div>
+    <h3>选择你的学习时间</h3>
+    开始时间：<input class="start" type="time">
+    <br>
+    结束时间：<input class="end" type="time">
+</div>
+
+<div class="seminar" style="display: none;">
+    <div>
+        <h3>申请主题</h3>
+        <input class="theme" type="text">
+    </div>
+    <div>
+        <h3>添加成员</h3>
+        本人学号：<input class="mb0" type="number">
+        <!--        <p class="m0b" style="border: 1px solid black;width: 150px;height: 20px;margin: 5px;"></p>-->
+        <br>
+        成员1学号：<input class="mb1" type="number">
+        <!--        <p class="m1b" style="border: 1px solid black;width: 150px;height: 20px;margin: 5px;"></p>-->
+        <br>
+        成员2学号：<input class="mb2" type="number">
+        <!--        <p class="m2b" style="border: 1px solid black;width: 150px;height: 20px;margin: 5px;"></p>-->
+    </div>
+</div>
+<br/>
+<div>
+    <button class="now">现在就学</button>
+    <button class="reserve">六点开抢</button>
+</div>
+
+<div class="seminar2">
     <div>
         <h3>抢专门座位</h3>
         <select name="" id="" class="special-area">
@@ -51,13 +73,15 @@
             <button class="special-btn">输入完成</button>
         </div>
     </div>
+</div>
 
-    <h2 id="Countdown"></h2>
+<h2 id="Countdown"></h2>
 
-    <h3>支持作者！给大家带来更好更多的功能！</h3>
-    <img src="../img/wx.jpeg" />
-    <br>
-    <img src="../img/zfb.jpeg" />
+<h3>支持作者！给大家带来更好更多的功能！</h3>
+<img src="../img/wx.jpeg"/>
+<br>
+<img src="../img/zfb.jpeg"/>
 </body>
 <script src="../js/popup.js"></script>
+
 </html>
